@@ -71,7 +71,7 @@ const Dashboard = () => {
         }),
       })
       mutate()
-      e.target.reset()
+      e.target.reset() // to reset you form
     } catch (err) {
       console.log(err)
     }

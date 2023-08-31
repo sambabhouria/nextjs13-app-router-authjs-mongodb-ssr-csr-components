@@ -3,8 +3,10 @@ import styles from './page.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
+//NEXTAUTH_URL
 async function getData() {
-  const res = await fetch('http://localhost:3000/api/posts', {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/posts`, {
+    // const res = await fetch('api/posts', {
     cache: 'no-store',
   })
 
